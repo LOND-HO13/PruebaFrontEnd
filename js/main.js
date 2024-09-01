@@ -12,8 +12,8 @@ function displayTasks() {
         const taskItem = document.createElement('li');
         taskItem.innerHTML = `
             <span>${task.name}</span>
-            <button onclick="viewTask(${index})">View</button>
-            <button onclick="deleteTask(${index})">Delete</button>
+            <button onclick="viewTask(${index})">Ver</button>
+            <button style="background-color:red" onclick="deleteTask(${index})">Borrar</button>
         `;
         taskList.appendChild(taskItem);
     });
@@ -74,3 +74,4 @@ document.addEventListener('DOMContentLoaded', () => {
         loadTaskDetails();
     }
 });
+
